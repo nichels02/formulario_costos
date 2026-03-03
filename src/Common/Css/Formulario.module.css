@@ -1,0 +1,213 @@
+.Padre{
+    width: 100vw;
+    height: auto;
+}
+.ComponentePadre{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ea3939;
+}
+.ComponentePadreForm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box
+}
+.RecuadroPregunta{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: white solid 3px;
+    border-radius: 30px;
+    background-color: #747bff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.TituloRecuadro{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+}
+.SubTituloRecuadro{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.CuadroTexto{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 18px;
+
+}
+.CuadroTexto:focus {
+    outline: none;
+    border-bottom: 2px solid #dc1338;
+}
+
+.ContenedorHijoPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContenedorHijoSecundario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.ContenedorHijoSecundarioVertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+}
+.InputCheckBox {
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    border: 2px solid white;
+    appearance: none;        /* 🔥 importante */
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+.InputCheckBox:checked::after {
+    content: "✔";
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.SliderRoot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    touch-action: none;
+    width: 100%;
+    height: 50px;
+}
+
+
+.SliderTrack {
+    background-color: #575757;
+    position: relative;
+    flex-grow: 1;
+    border-radius: 9999px;
+    height: 10px;
+}
+
+.SliderRange {
+    position: absolute;
+    background-color: white;
+    border-radius: 9999px;
+    height: 100%;
+}
+
+
+
+.SliderThumb {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ff0000;
+    box-shadow: 0 2px 10px #3e3e3e;
+    border-radius: 50%;
+    /*border-radius: 10px;*/
+}
+.SliderThumb:hover {
+    background-color: #46cf27;
+}
+.InputTextCantidad{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    font-size: 18px;
+}
+.SeccionAreas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.LiniaSeparadoraCuadro{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-top:20px;
+}
+.select{
+    font-size: 18px;
+    background-color: transparent;
+}
+.select option {
+    color: white;      /* importante */
+    background: black; /* importante */
+}
+
+
+
+
+
+.SwitchBase {
+    width: 50px;
+    height: 24px;
+    background-color: gray;
+    border-radius: 9999px;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.SwitchOn {
+    background-color: #4ade80; /* verde */
+}
+
+.SwitchOff {
+    background-color: #d1d5db; /* gris */
+}
+
+.SwitchThumb {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 9999px;
+    transition: transform 0.2s;
+}
+
+.SwitchOn .SwitchThumb {
+    transform: translateX(26px);
+}
+
+
+.InputTextArea{
+    resize: vertical;
+    width: 100% !important;
+    height: 100px;
+    padding: 10px;
+}
+
+.InputTextAreaContenedor{
+    width: 80% !important;
+    max-width: 1200px;
+}
