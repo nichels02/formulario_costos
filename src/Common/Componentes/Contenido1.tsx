@@ -1,6 +1,6 @@
 import * as Slider from "@radix-ui/react-slider";
 import {Switch} from "@headlessui/react";
-import styles from "../css/Formulario.module.css";
+import styles from "../Css/Formulario.module.css";
 import type {FormDataType} from "./sistemas/formTypes.ts"; // ajusta esto
 
 type Props = {

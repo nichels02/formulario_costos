@@ -3,7 +3,7 @@ import * as Slider from '@radix-ui/react-slider'
 import type { FormDataType, CosasExtra } from "./sistemas/formTypes.ts";
 
 import { useState, useEffect } from "react";
-import styles from "../css/Formulario.module.css";
+import styles from "../Css/Formulario.module.css";
 import Integrantes from "./Integrantes.tsx";
 import Contenido1 from "./Contenido1.tsx";
 import Diseno from "./Diseno.tsx";
