@@ -459,7 +459,7 @@ function Formulario() {
                                             <input
                                                 type="number"
                                                 className={styles.InputTextCantidad}
-                                                name="CuantoCostoElTransporte"
+                                                name="AlimentoParaCuantosDias"
                                                 value={formData.AlimentoParaCuantosDias}
                                                 onChange={handleChange}
                                                 min={0}
@@ -497,7 +497,7 @@ function Formulario() {
                                             <input
                                                 type="number"
                                                 className={styles.InputTextCantidad}
-                                                name="CuantoCostoElTransporte"
+                                                name="CostoDeAlimentoPorPersonaDeUnDia"
                                                 value={formData.CostoDeAlimentoPorPersonaDeUnDia}
                                                 onChange={handleChange}
                                                 min={0}
