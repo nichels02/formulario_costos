@@ -8,6 +8,7 @@ import Integrantes from "./Integrantes.tsx";
 import Contenido1 from "./Contenido1.tsx";
 import Diseno from "./Diseno.tsx";
 import Gestion from "./Gestion.tsx";
+import ModalResultado from "./ModalResultado.tsx";
 
 
 //import { useContent } from "./Sistemas/useContent.tsx";
@@ -176,6 +177,7 @@ function Formulario() {
     }, [formData]);
     //endregion
 
+    const [open, setOpen] = useState(false);
 
 
 
@@ -244,6 +246,7 @@ function Formulario() {
     //region subir datos
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault(); // evita que recargue la página
+        setOpen(true);
     };
     //endregion
 
@@ -282,7 +285,7 @@ function Formulario() {
                             Horas de trabajo necesarias:
                         </div>
                         <input
-                            type="text"
+                            type="number"
                             className={styles.CuadroTexto}
                             name="HorasDeTrabajoNecesarias"
                             value={formData.HorasDeTrabajoNecesarias}
@@ -667,6 +670,9 @@ function Formulario() {
                         Enviar
                     </button>
                 </form>
+
+
+                <ModalResultado isOpen={open} onClose={() => setOpen(false)}></ModalResultado>
             </div>
         </div>
     );

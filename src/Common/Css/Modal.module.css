@@ -1,0 +1,101 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    height: 50%;
+    width: 50%;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.modalCeldaI,
+.modalCeldaD{
+    background: #bdbdbd;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.modalCeldaI{
+    grid-column: 1;
+}
+.modalCeldaD{
+    grid-column: 2;
+    justify-content: right;
+}
+.textoCeldaModal,
+.TextoPrecio{
+        color: black;
+        font-size: 30px;
+    }
+
+.infoWrapper {
+    position: relative; /* 👈 clave */
+    display: inline-block;
+}
+.infoExtra{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background: #073fbc;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    left: 300%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 270px;
+    height: 180px;
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+.ContenedorInternoTooltip{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;   /* scroll vertical si es necesario */
+    overflow-x: hidden; /* evita scroll horizontal */
+
+    /* Ocultar scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge antiguos */
+}
+.ContenedorInternoTooltip::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+/* 🔥 la flecha */
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%) scaleX(13) scaleY(5);
+
+    width: 0;
+    height: 0;
+
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid black;
+}
+

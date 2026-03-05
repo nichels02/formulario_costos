@@ -160,8 +160,12 @@ export  type FormDataType = {
 }
 
 export type RegresoDeCotizar = {
+    PrecioTrabajadores: number;
+    PrecioServicios: number;
+    PrecioExtras: number;
     PrecioBase: number;
     PrecioConGanancia: number;
     ListaDeServiciosCotizados: string[];
+    ListaDeTrabajadoresCotizados: string[];
 }
 
